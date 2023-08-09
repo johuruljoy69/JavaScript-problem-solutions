@@ -18,15 +18,14 @@
     </section>
 
     <section>
-        <!-- Start Success Dialog Box -->
-        <!-- list of attributes
-  https://www.w3schools.com/tags/ref_attributes.asp -->
 
         <div class="dialogBtn-container">
-            <button class="dialogBtn" data-target="dialog-1" type="dialog-button">Success!</button>
-            <button class="dialogBtn" data-target="dialog-2" type="dialog-button">Warning!</button>
+            <button class="dialogBtn" data-target="dialog-1" type="dialog-button">Success!</button><!--Success Dialog Box btn -->
+            <button class="dialogBtn" data-target="dialog-2" type="dialog-button">Warning!</button><!--Warning Dialog Box btn -->
+            <button class="dialogBtn" data-target="dialog-3" type="dialog-button">Confirm!</button><!--Confirm Dialog Box btn -->
         </div>
 
+        <!-- Start Success Dialog Box -->
         <div id="dialog-1" class="dialog position-middle">
             <div class="dialog-header">
                 <p>Success!</p>
@@ -34,12 +33,13 @@
             <div class="dialog-content">
                 <p>Are you confirm or cancel this item</p>
             </div>
-            <div class="dialog-footer">               
+            <div class="dialog-footer">
                 <button class="confirmBtn" data-target="confirmBtn" type="dialog-button">Confirm!</button>
                 <button class="cancelBtn" data-target="cancelBtn" type="dialog-button">Cancel!</button>
             </div>
-        </div>
+        </div><!-- End of success dialog box -->
 
+        <!-- Start of Warning dialog box -->
         <div id="dialog-2" class="dialog scrollable">
             <div class="dialog-header">
                 <p>Warning!</p>
@@ -47,11 +47,25 @@
             <div class="dialog-content">
                 <p>You won't be able to revert this!</p>
             </div>
-            <div class="dialog-footer">               
+            <div class="dialog-footer">
                 <button class="deleteBtn" data-target="deleteBtn" type="dialog-button">Yes, Delete it!</button>
                 <button class="cancelBtn" data-target="cancelBtn" type="dialog-button">Cancel!</button>
             </div>
-        </div>
+        </div><!-- End of warning dialog box -->
+
+        <!-- start of confirm dialog box -->
+        <div id="dialog-3" class="dialog scrollable">
+            <div class="dialog-header">
+                <p>Confirm!</p>
+            </div>
+            <div class="dialog-content">
+                <p>Are you login this site!</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="confirmBtn" data-target="confirmBtn" type="dialog-button">Confirm!</button>
+                <button class="cancelBtn" data-target="cancelBtn" type="dialog-button">Cancel!</button>
+            </div>
+        </div><!-- End of confirm dialog box -->
 
     </section>
 
