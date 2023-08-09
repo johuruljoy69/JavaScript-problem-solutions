@@ -16,29 +16,44 @@
             <p class="text-description">Welcome to problems and solutions Note Book</p>
         </div>
     </section>
-    
-    <!-- Start Dialog Box -->
+
     <section>
-        <div class="dialog-popup box-center">
-            <div class="icon">
-                <i class="fa fa-check"></i>
+        <!-- Start Success Dialog Box -->
+        <!-- list of attributes
+  https://www.w3schools.com/tags/ref_attributes.asp -->
+
+        <div class="dialogBtn-container">
+            <button class="dialogBtn" data-target="dialog-1" type="dialog-button">Success!</button>
+            <button class="dialogBtn" data-target="dialog-2" type="dialog-button">Warning!</button>
+        </div>
+
+        <div id="dialog-1" class="dialog position-middle">
+            <div class="dialog-header">
+                <p>Success!</p>
             </div>
-            <div class="title">
-                Success!
+            <div class="dialog-content">
+                <p>Are you confirm or cancel this item</p>
             </div>
-            <div class="discription">
-                <p>Your work has been saved</p>
-            </div>
-            <div class="dismiss-btn">
-                <button id="dismiss-popup-btn">Dismiss</button>
+            <div class="dialog-footer">               
+                <button class="confirmBtn" data-target="confirmBtn" type="dialog-button">Confirm!</button>
+                <button class="cancelBtn" data-target="cancelBtn" type="dialog-button">Cancel!</button>
             </div>
         </div>
-        <div class="box-center">
-            <button class="open-popup-btn" id="open-popup-btn">
-                Try Dialog!
-            </button>
+
+        <div id="dialog-2" class="dialog scrollable">
+            <div class="dialog-header">
+                <p>Warning!</p>
+            </div>
+            <div class="dialog-content">
+                <p>You won't be able to revert this!</p>
+            </div>
+            <div class="dialog-footer">               
+                <button class="deleteBtn" data-target="deleteBtn" type="dialog-button">Yes, Delete it!</button>
+                <button class="cancelBtn" data-target="cancelBtn" type="dialog-button">Cancel!</button>
+            </div>
         </div>
-    </section><!--End of Dialog Box -->
+
+    </section>
 
     <!-- JavaScript Link -->
     <script src="https://kit.fontawesome.com/2d8df3b1cb.js" crossorigin="anonymous"></script>
