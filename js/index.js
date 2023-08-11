@@ -39,3 +39,30 @@ dialogs.forEach(dialog => {
         });
     }
 });
+
+// Accordion js
+const accordionButtons = document.querySelectorAll('[data-target]');
+const buttons = document.querySelectorAll('.accordion-content');
+
+accordionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const target = button.getAttribute('data-target');
+    const content = document.getElementById(target);
+
+    buttons.forEach(btn => {
+      if (btn !== button) {
+        btn.classList.remove('active');
+      }
+    });
+
+    button.classList.toggle('active');
+
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  });
+});
+
+  
